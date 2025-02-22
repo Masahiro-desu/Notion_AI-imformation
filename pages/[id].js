@@ -183,9 +183,7 @@ export default function Post({ page, blocks }) {
           {blocks.map((block) => (
             <Fragment key={block.id}>{renderBlock(block)}</Fragment>
           ))}
-          <Link href="/">
-            <a className={styles.back}>← Go home</a>
-          </Link>
+          <Link href="/" className={styles.back}>← Go home</Link>
         </section>
       </article>
     </div>

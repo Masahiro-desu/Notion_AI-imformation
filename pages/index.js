@@ -47,9 +47,9 @@ export default function Home({ posts }) {
               </g>
             </svg>
           </div>
-          <h1>Next.js + Notion API ブログ</h1>
+          <h1>AIの最新情報-最速更新</h1>
           <p>
-           Notionと連携しているブログです。Notionに書き込めばそのままブログとして投稿できます。
+           AIの最新情報を毎朝投稿するブログです。最速の情報をお届けします。
           </p>
         </header>
 
@@ -68,15 +68,13 @@ export default function Home({ posts }) {
               <li key={post.id} className={styles.post}>
                 <h3 className={styles.postTitle}>
                   <Link href={`/${post.id}`}>
-                    <a>
-                      <Text text={post.properties.Name.title} />
-                    </a>
+                    <Text text={post.properties.Name.title} />
                   </Link>
                 </h3>
 
                 <p className={styles.postDescription}>{date}</p>
                 <Link href={`/${post.id}`}>
-                  <a> Read post →</a>
+                  Read post →
                 </Link>
               </li>
             );
